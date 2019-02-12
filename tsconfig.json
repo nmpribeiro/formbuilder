@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "jsxFactory": "h",
+        "module": "es2015",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": true,
+        "baseUrl": ".",
+        "noImplicitAny": false,
+        "target": "es5",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [ "es5", "es2015", "es2015.promise", "es2016", "dom" ],
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "exclude": [
+        "node_modules/**/*"
+    ]
+}

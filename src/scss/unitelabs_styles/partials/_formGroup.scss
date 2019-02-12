@@ -1,0 +1,104 @@
+
+.form-group {
+  display: inline-block;
+
+  label {
+    margin-right: 10px;
+  }
+
+  .more-info-wrapper {
+    .more-info {
+      font-size: 14px;
+    }
+
+    .more-info.hide {
+      display: none;
+    }
+    .more-info.show {
+      display: inline;
+    }
+
+    .btn-command {
+      font-size: 14px;
+    }
+  }
+}
+
+.uniteLabsFormInput {
+  width: inherit;
+  display: inline-block;
+}
+
+
+.inputRow {
+  padding: 0;
+  display: inherit;
+  margin-bottom: 5px;
+}
+.label {
+  font-weight: normal;
+  text-align: left;
+}
+.inputGroup {
+  text-align: left;
+  //display: table;
+  min-height: 40px;
+
+  input {
+    min-height: 20px;
+  }
+
+  select {
+    width: 179px;
+    min-height: 30px;
+    background-color: white;
+  }
+
+  input, select {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .innerInput.validationError {
+    input {
+      border: 1px solid red;
+      padding: 1px;
+      box-shadow: inset 0px 0px 3px $orange_color;
+    }
+    small.notValid {
+      color:orangered;
+      font-weight:bold;
+      padding-left: 5px;
+    }
+  }
+}
+
+.inputCenter .inputGroup {
+  margin-bottom: 5px;
+  height: 100%;
+  display: grid;
+
+  .innerInput {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    position: absolute;
+    left: 15px;
+
+    input {
+      width: 179px;
+    }
+  }
+}
+
+input[type=text],
+input[type=number],
+select {
+  width: 180px;
+  border: 1px solid rgb(150,150,150);
+  height: 40px;
+  border-radius: 5px;
+}
+

@@ -3992,5 +3992,5 @@
 
   require.alias("./chai.js", "chai");
 
-  return require('chai');
+  return require('delete/test/vendor/js/chai');
 });

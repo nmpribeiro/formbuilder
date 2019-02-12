@@ -1,0 +1,164 @@
+@import "variables";
+@import "fonts"; // fonts uses 2 variables inside variables
+
+
+:global {
+
+    .btn {
+        $button-border-width: 2px;
+
+        border-width: $button-border-width;
+
+        &.btn-dark {
+            background-color: $black;
+            border-color: $black;
+            color: $white;
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+
+    /* You can add global styles to this file, and also import other style files */
+
+    .content-wrapper {
+        padding-top: 150px;
+        //padding-bottom: 250px;
+        border: 0;
+
+        .container{
+            // padding-bottom: 250px;
+        }
+    }
+
+    div {
+        font-family: $ptsans_font;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .normal-cursor{
+        cursor: default;
+    }
+
+    .no-user-select {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    }
+
+
+    // import has to be here in global scope!
+    @import url("https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
+    .icon {
+        font-size: 23px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-family: $oswald_font;
+        text-align: center;
+        font-size: 20px;
+
+        .logo {
+            display: inline-block;
+
+            img {
+                max-width: 55px;
+                margin-right: 10px;
+                margin-top: -7px;
+            }
+        }
+        .inlineTitle {
+            position: relative;
+            margin-top: -10px;
+            display: inline-block;
+        }
+    }
+
+    /* Tooltip container */
+    .tooltip {
+        border-radius: 33px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: crosshair;
+        opacity: 1;
+        z-index: 9998;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        font-size: 15px;
+
+        position: absolute;
+        z-index: 9999;
+        left: 30px;
+        transform: scale(0,0);
+        transition: all .1s ease-in-out;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        transform: scale(1,1);
+    }
+
+    /* UniteLabs New Button Style */
+    .indalaBtn {
+        display: block;
+        border: 1px #00000026 solid;
+        border-radius: 5px;
+        margin: 13px auto;
+        min-width: 250px;
+        text-transform: uppercase;
+        padding: 15px;
+        background-color: #ffffff;
+        font-family: $oswald_font;
+
+        transition: all .5s ease-in-out;
+    }
+    .indalaBtn:hover {
+        background-color: #dddddd;
+        border: 1px rgba(0, 0, 0, 0.28) solid;
+    }
+
+    .form-group {
+        display: inline-block;
+
+        label {
+            margin-right: 10px;
+        }
+
+        .more-info-wrapper {
+            .more-info {
+                font-size: 14px;
+            }
+
+            .more-info.hide {
+                display: none;
+            }
+            .more-info.show {
+                display: inline;
+            }
+
+            .btn-command {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

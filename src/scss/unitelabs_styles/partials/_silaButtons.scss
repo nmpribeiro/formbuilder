@@ -1,0 +1,32 @@
+@import '../breakpoint';
+@import '../mixins';
+@import '../variables';
+
+
+.btn-command {
+    background-color: white;
+    color: black;
+    font-family: Oswald, sans-serif;
+    border-color: black;
+    border-radius: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-command:hover,
+.btn-command.selected {
+    background-color: #eaeaea;
+}
+
+.anchorButton {
+    color: black;
+    text-decoration: none;
+    border: black 2px solid;
+    min-width: 35px;
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 10px;
+    line-height: 10px;
+    text-align: center;
+}

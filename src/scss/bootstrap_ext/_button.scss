@@ -1,0 +1,24 @@
+// Example for overriding and extending bootstrap components
+
+@import "~bootstrap/scss/mixins/buttons";
+
+.btn {
+    $button-border-width: 2px;
+
+    border-width: $button-border-width;
+
+    &.btn-dark {
+        background-color: $black;
+        border-color: $black;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+}
+
+.btn-default {
+    @include button-variant(#bbb, #a5a5a5, #bbb, darken(#bbb, 10%), darken(#bbb, 10%), darken(#bbb, 12.5%))
+}
