@@ -3,7 +3,7 @@ import Element, { h } from '@skatejs/element-preact';
 import { props } from '@skatejs/element';
 
 
-export class LiElement extends Element {
+export class LiComponent extends Element {
 
     public static props = {
         num: props.any
@@ -17,7 +17,6 @@ export class LiElement extends Element {
     }
 
     public render() {
-        console.log('LI: ', this.num );
         return <div>
             <style>
                 { '.test { border: red 2px solid; }' }
@@ -27,4 +26,4 @@ export class LiElement extends Element {
     }
 }
 
-customElements.define('li-element', LiElement);
+customElements.define('li-element', LiComponent);

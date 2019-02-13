@@ -6,7 +6,7 @@ import { props } from '@skatejs/element';
 
 // Styles
 import styles from './styles.scss';
-import { LiElement } from '../LiComponent/li-component';
+import { LiComponent } from '../';
 
 export class MyComponent extends Element {
 
@@ -27,14 +27,14 @@ export class MyComponent extends Element {
     }
 
     public render() {
-        console.log('stypes: ', styles.toString());
+        // console.log('stypes: ', styles.toString());
         return (
             <div>
                 <style>{ styles.toString() }</style>
                 <h3>{ this.name }</h3>
 
                 <ul class="test">
-                    { this.list.map( i => <LiElement num={i} /> ) }
+                    { this.list.map( i => <LiComponent num={i} /> ) }
                 </ul>
 
                 <pre>{ this.list.toString() }</pre>

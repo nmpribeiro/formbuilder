@@ -14,3 +14,8 @@ declare module '*.scss' {
     const classNames: ClassNames;
     export = classNames;
 }
+
+declare module "*.html" {
+    const content: string;
+    export default content;
+}

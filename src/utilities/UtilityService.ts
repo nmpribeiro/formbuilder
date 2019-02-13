@@ -10,6 +10,10 @@ interface PlateItem {
 
 export class UtilityService {
 
+    public static getTemplate( view: any ): string {
+        return view + '';
+    }
+
     public static updateList( list: number[] = [] ): number[] {
         const newList: number[] = [];
         list.forEach( item => newList.push( item + 1 ) );
